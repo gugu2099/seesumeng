@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+body {
+    line-height: 1;
+    font-size: 1em;
+    font-family: 'Noto Sans KR', sans-serif !important;
+    word-break: keep-all;
+    margin-top: 120px !important;
+}
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');

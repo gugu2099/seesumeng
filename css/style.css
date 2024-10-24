@@ -1,0 +1,292 @@
+
+
+#wrap{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* swiper start */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+}
+
+video{
+    /* max-width: 1280px; */
+    position: absolute;
+    height : 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* slide text start */
+.slide{
+    position: relative;
+}
+
+.slide1 > .slideText,
+.slide2 > .slideText,
+.slide3 > .slideText,
+.slide4 > .slideText{
+    position: absolute;
+    display: inline-block;
+    bottom: 250px;
+    left: 100px;
+}
+
+.slide1 > .slideText > h2,
+.slide2 > .slideText > h2,
+.slide3 > .slideText > h2,
+.slide4 > .slideText > h2{
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 160%;
+    text-align: left;
+}
+
+.slide1 > .slideText > h2,
+.slide3 > .slideText > h2,
+.slide4 > .slideText > h2{
+    color: #fff;
+}
+.slide2 > .slideText > h2{
+    color: #3f3f3f;
+}
+/* slide text end */
+
+
+.cls-2 {
+    fill: #fff !important;
+    stroke: rgba(255, 255, 255, 0.9);
+    stroke-linecap: round;
+    animation-iteration-count: infinite;
+}
+
+.slide2 > #do4{
+    text-transform: uppercase;
+    animation: stroke 6s 1 alternate;
+    animation-iteration-count: infinite;
+    /* fill: rgba(72, 500, 500, 1); */
+    position: absolute;
+    width: 90px;
+    right: 100px;
+    bottom: 100px;
+}
+
+/* swiper */
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev{
+    right: var(--swiper-navigation-sides-offset, 20px) !important;
+    left: auto;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next{
+    left: var(--swiper-navigation-sides-offset, 20px) !important;
+    right: auto;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    height: 50px !important;
+    width: 30px !important;
+    color: #fff !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after{
+    font-size: 40px !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction{
+    bottom: var(--swiper-pagination-bottom,10px) !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,5px) !important;
+}
+.swiper-pagination-bullet{
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px)) !important;
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px)) !important;
+    background: var(--swiper-pagination-bullet-inactive-color, #fff) !important;
+    transition: 0.3s;
+}
+.swiper-pagination-bullet-active{
+    background: #a81113 !important;
+}
+.swiper-pagination-bullet:hover{
+    background: #a81113;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1) !important;
+}
+/* swiper end */
+
+
+/* section1 start */
+
+#section1, #section2{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* section1 end */
+
+/* section2 start */
+#section2{}
+#section2 a {
+    position: relative;
+}
+
+#section2 .ta li > a > p,
+#section2 .tw .tw1 > a > p,
+#section2 .tw .tw2 > a > p,
+#section2 .te .te1 > a > p,
+#section2 .te .te2 > a > p,
+#section2 .te .te3 > a > p{
+    position: absolute;
+    width: 100%;
+    left: 30px;
+    top: 30px;
+    color: #fff;
+    font-size: 22px;
+}
+#section2 .tw li > a,
+#section2 .te li > a{
+    background-color: #333;
+    display: block;
+    color: #fff;
+}
+
+/* ta */
+#section2 .ta{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 100%;
+    gap: 20px;
+    padding-top: 20px;
+}
+#section2 .ta li{
+    width: 100%;
+    position: relative;
+}
+#section2 .ta li:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    background-color: #333;
+    /* cursor: pointer; */
+}
+
+/* tBox */
+#section2 .tBox{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#section2 .tw{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 800px;
+}
+#section2 .tw li{
+    width: 100%;
+}
+#section2 .tw .tw1{
+    height: 235px;
+}
+#section2 .tw .tw1 > a,
+#section2 .tw .tw2,
+#section2 .tw .tw2 > a{
+    height: 100%;
+}
+
+#section2 .te{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#section2 .te li{
+    height: 100%;
+}
+
+#section2 .teG1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    height: 100%;
+}
+#section2 .teG2{
+    width: 100%;
+}
+#section2 .teG1 li > a{
+    height: 100%;
+}
+#section2 .teG2 li > a{
+    height: 100%;
+}
+/* section2 end */
+
+
+
+/* keyframes */
+
+#do0{
+    text-transform: uppercase;
+    animation: stroke 2s 1 alternate;
+    /* fill: rgb(64, 64, 64); */
+    fill: rgb(0, 0, 0, 1);
+    /* 반복 ↓ */
+    animation-iteration-count: infinite;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#do1{
+    text-transform: uppercase;
+    animation: stroke1 4s 1 alternate-reverse;
+    /* fill: rgba(72, 500, 500, 1); */
+    /* 반복 ↓ */
+    animation-iteration-count: infinite;
+    height: 100%;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* #do4{
+    text-transform: uppercase;
+    animation: stroke 6s 1 alternate;
+    animation-iteration-count: infinite;
+    position: absolute;
+    width: 90px;
+    right: 100px;
+    top: 100px;
+} */
+
