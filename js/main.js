@@ -22,19 +22,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-
 // 헤더푸터 가져오기
-
-fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header').innerHTML = data;
-    });
-
-
-
-// 헤더푸터 가져오기
-
 // window.addEventListener('load', function() {
 //     var allElements = document.getElementsByTagName('*');
 //     Array.prototype.forEach.call(allElements, function(el) {

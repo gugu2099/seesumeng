@@ -19,10 +19,8 @@
 
     <!-- <div data-include-path="./header.html" id="header"></div> -->
 
-    <!-- <?php include "header.php"; ?> -->
+    <?php include "header.php"; ?>
     <!-- //header -->
-
-    <div id="header"></div>
 
 <div id="wrap">
 
@@ -166,7 +164,7 @@
 
 
     <!-- footer -->
-    <div data-include-path="./footer.html" id="footer"></div>
+    <!-- <div data-include-path="./footer.html" id="footer"></div> -->
     <!-- <?php include "footer.php"; ?> -->
     <!-- //footer -->
 
