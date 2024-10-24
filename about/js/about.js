@@ -1,3 +1,7 @@
+
+
+
+
 // 헤더푸터 가져오기
 window.addEventListener('load', function() {
     var allElements = document.getElementsByTagName('*');
