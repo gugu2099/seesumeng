@@ -89,7 +89,7 @@ body {
 /* Logo end */
 
 /*  */
-@keyframes stroke1 {
+@keyframes stroke {
     0% {
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;

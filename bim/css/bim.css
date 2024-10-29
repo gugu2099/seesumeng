@@ -67,9 +67,7 @@ body {
 
 
 /* Background start */
-#do0,
-#do1,
-#do9{
+#do1{
     text-transform: uppercase;
     animation: stroke 6s 1 alternate;
     /* fill: rgba(72, 500, 500, 1); */
@@ -88,7 +86,7 @@ body {
 /* Logo end */
 
 /*  */
-@keyframes stroke1 {
+@keyframes stroke {
     0% {
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;

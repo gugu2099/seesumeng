@@ -70,12 +70,12 @@ body {
 
 
 /* Background start */
-#do0,
-#do1,
 #do9{
     text-transform: uppercase;
     animation: stroke 6s 1 alternate;
     /* fill: rgba(72, 500, 500, 1); */
+    stroke: rgba(255,255,255,0.8);
+    stroke: rgba(0, 0, 0,0.8);
     /* 반복 ↓ */
     animation-iteration-count: infinite;
 }
@@ -101,8 +101,8 @@ body {
     100% {
         stroke-dashoffset: -25%;
         stroke-dasharray: 25% 0;
-        fill: rgba(255, 255, 255, 1);
-        stroke: rgba(255, 255, 255, 1);
+        fill: rgba(255, 255, 255, 0.8);
+        stroke: rgba(255, 255, 255, 0.8);
         stroke-width: 0;
     }
 }
