@@ -65,6 +65,10 @@ body {
 /* section1 end */
 
 
+
+
+
+
 /* Background start */
 #do0,
 #do1,
@@ -86,7 +90,7 @@ body {
 }
 /* Logo end */
 
-/* 1번째 페이지 */
+/*  */
 @keyframes stroke {
     0% {
         stroke-dashoffset: 25%;
@@ -103,19 +107,3 @@ body {
     }
 }
 
-/* 2번째 페이지 */
-@keyframes stroke1 {
-    0% {
-        stroke-dashoffset: 25%;
-        stroke-dasharray: 0 50%;
-        stroke: rgba(255,255,255,1);
-        stroke-width: 1;
-    }
-    100% {
-        stroke-dashoffset: -25%;
-        stroke-dasharray: 25% 0;
-        fill: rgba(255, 255, 255, 1);
-        stroke: rgba(255, 255, 255, 1);
-        stroke-width: 0;
-    }
-}

@@ -63,3 +63,44 @@ body {
 
 /* section1 end */
 
+
+
+
+/* Background start */
+#do0,
+#do1,
+#do9{
+    text-transform: uppercase;
+    animation: stroke 6s 1 alternate;
+    /* fill: rgba(72, 500, 500, 1); */
+    /* 반복 ↓ */
+    animation-iteration-count: infinite;
+}
+/* Background end */
+
+/* Logo start */
+#do4{
+    text-transform: uppercase;
+    animation: stroke 6s 1 alternate;
+    /* fill: rgba(72, 500, 500, 1); */
+    animation-iteration-count: infinite;
+}
+/* Logo end */
+
+/*  */
+@keyframes stroke1 {
+    0% {
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke: rgba(255,255,255,1);
+        stroke-width: 1;
+    }
+    100% {
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 25% 0;
+        fill: rgba(255, 255, 255, 1);
+        stroke: rgba(255, 255, 255, 1);
+        stroke-width: 0;
+    }
+}
+
