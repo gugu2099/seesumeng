@@ -31,7 +31,7 @@ fetch('../footer.html')  // 상위 폴더로 이동하여 'footer.html' 파일 �
 //                 if (this.readyState == 4 && this.status == 200) {
 //                     el.outerHTML = this.responseText;
 //                 }
-//             };
+//             }; 
 //             xhttp.open('GET', includePath, true);
 //             xhttp.send();
 //         }
