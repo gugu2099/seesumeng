@@ -116,6 +116,10 @@ body {
     color: #a81113;
 }
 
+#gnb .aside .a-group .aside-01 li .aSt1{
+    height: 14px;
+}
+
 #gnb .aside .a-group .aside-01 li a::after{
     content: "";
     display: inline-block;
