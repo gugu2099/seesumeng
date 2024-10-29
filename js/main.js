@@ -22,12 +22,22 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+// Header 불러오기
 fetch('header.html')  // 'header.html' 파일을 불러옴
-.then(response => response.text())  // 응답을 텍스트로 변환
-.then(data => {
-    document.getElementById('header').innerHTML = data;  // 'header' div에 삽입
-})
-.catch(error => console.log('Error loading header:', error));
+    .then(response => response.text())  // 응답을 텍스트로 변환
+    .then(data => {
+        document.getElementById('header').innerHTML = data;  // 'header' div에 삽입
+    })
+    .catch(error => console.log('Error loading header:', error));
+
+// Footer 불러오기
+fetch('footer.html')  // 'footer.html' 파일을 불러옴
+    .then(response => response.text())  // 응답을 텍스트로 변환
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;  // 'footer' div에 삽입
+    })
+    .catch(error => console.log('Error loading footer:', error));
+
 
 // 헤더푸터 가져오기
 // window.addEventListener('load', function() {
