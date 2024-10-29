@@ -112,8 +112,7 @@ body {
     vertical-align: middle;
 }
 
-#gnb .aside .a-group .aside-01 li a:nth-child(1),
-#gnb .aside .a-group .aside-01 li a:nth-child(2){
+#gnb .aside .a-group .aside-01 li .aSt{
     color: #a81113;
 }
 
