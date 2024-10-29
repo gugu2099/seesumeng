@@ -84,6 +84,8 @@ body {
 }
 
 #gnb .aside .a-group .aside-01 {
+    margin-top: 20px;
+    margin-bottom: 6px;
     margin-top: 30px;
     display: flex;
     justify-content: right;
@@ -98,13 +100,18 @@ body {
     padding-right: 0;
 }
 
-#gnb .aside .a-group .aside-01 li a{
+/* #gnb .aside .a-group .aside-01 li a{
     display: none;
-}
+} */
 
 #gnb .aside .a-group .aside-01 li a {
-    color: #b1b1b1;
+    color: #333;
     display: block;
+}
+
+#gnb .aside .a-group .aside-01 li a > :nth-child(1),
+#gnb .aside .a-group .aside-01 li a > :nth-child(2){
+    color: #a81113;
 }
 
 #gnb .aside .a-group .aside-01 li a::after{
