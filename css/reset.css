@@ -51,8 +51,10 @@ body {
     border-radius: 0;
     background-color: #d1d1d1;
     color: #000;
-    font-size: 18px;
-    line-height: 120%;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
 }
 .nav-tabs .nav-link.active{
     background-color: #000;
