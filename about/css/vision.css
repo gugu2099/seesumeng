@@ -66,7 +66,7 @@ body {
 /* section1 end */
 
 /* Background start */
-#do9{
+#do20{
     text-transform: uppercase;
     animation: stroke 6s 1 alternate;
     /* fill: rgba(72, 500, 500, 1); */
@@ -87,7 +87,12 @@ body {
 /* Logo end */
 
 /*  */
-@keyframes stroke {
+
+/* @keyframes stroke {
+    0%   {stroke-dashoffset: 50;}
+    100% {stroke-dashoffset: 0;}
+} */
+/* @keyframes stroke {
     0% {
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
@@ -101,5 +106,32 @@ body {
         stroke: rgba(255, 255, 255, 0.8);
         stroke-width: 0;
     }
-}
+} */
 
+@keyframes stroke {
+    0% {
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(255, 255, 255, 0.8);
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(255, 255, 255, 0.8);
+    }
+
+    80% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(255, 255, 255, 0.8);
+    }
+
+    100% {
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        fill: rgba(72, 138, 204, 1);
+        stroke: rgba(54, 95, 160, 0);
+        stroke-width: 0;
+    }
+}
