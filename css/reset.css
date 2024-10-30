@@ -98,3 +98,55 @@ body {
     text-align: center;
     height: 100%;
 }
+
+
+
+
+/* Background start */
+#do1,
+#do20,
+#do21{
+    text-transform: uppercase;
+    animation: stroke 6s 1 alternate;
+    animation-iteration-count: infinite;
+}
+
+/* Background end */
+
+/* Logo start */
+#do4{
+    text-transform: uppercase;
+    animation: stroke 6s 1 alternate;
+    animation-iteration-count: infinite;
+}
+/* Logo end */
+
+
+/* stroke keyframes */
+@keyframes stroke {
+    0% {
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        /* fill: rgba(88, 88, 88, 0.8); */
+        stroke: rgba(88, 88, 88, 0.8);
+        stroke-width: 1;
+    }
+
+    70% {
+        /* fill: rgba(150, 150, 150, 0.1); */
+        stroke: rgba(88, 88, 88, 0.8);
+    }
+
+    80% {
+        /* fill: rgba(72, 138, 204, 0); */
+        stroke: rgba(88, 88, 88, 0.8);
+    }
+
+    100% {
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        /* fill: rgba(90, 90, 90, 0.8); */
+        stroke: rgba(88, 88, 88, 0.8);
+        stroke-width: 0;
+    }
+}
