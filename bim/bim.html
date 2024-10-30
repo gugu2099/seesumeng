@@ -26,56 +26,45 @@
     <!-- <?php include "header.php"; ?> -->
     <!-- //header -->
 
-<!-- 아코디언 -->
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne">
-                    Accordion Item #1
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseTwo">
-                    Accordion Item #2
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree">
-                    Accordion Item #3
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong>
-                </div>
-            </div>
-        </div>
+<!-- tab -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+            role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+            role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+            role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+            type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        ...11
     </div>
-
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        ...22
+    </div>
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        ...33
+    </div>
+    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+        ...44
+    </div>
+</div>
 
 
 <!-- section1 -->
 <section id="section1">
+
+    <!-- bacrground start -->
     <svg id="do1" data-name="do1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 500 500"> 
         <defs>
             <style>
@@ -301,6 +290,8 @@
         <line class="st1" x1="135" y1="259.8" x2="135" y2="297.2" />
         <polyline class="st1" points="102.3 293.4 103.9 293.4 103.9 259.8" />
     </svg>
+    <!-- bacrground end -->
+
     <!-- Logo start -->
         <!-- <svg id="do4" data-name="do4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.41 128.41">
         <defs>
@@ -335,6 +326,7 @@
         <polygon class="cls-2" points="77.55 128.27 76.67 128.27 71.27 120.04 71.2 120.04 71.2 128.27 70.29 128.27 70.29 118.29 71.17 118.29 76.57 126.54 76.65 126.54 76.65 118.29 77.55 118.29 77.55 128.27"/>
     </svg> -->
     <!-- Logo end -->
+
 </section>
 
 <!-- section2 -->
