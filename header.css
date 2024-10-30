@@ -107,6 +107,7 @@ body {
 #gnb .aside .a-group .aside-01 li a {
     color: #333;
     display: block;
+    font-size: 12px;
 }
 #gnb .aside .a-group .aside-01 li a > img{
     vertical-align: middle;
@@ -120,7 +121,7 @@ body {
     margin-left: 5px;
 }
 #gnb .aside .a-group .aside-01 li .aSt2{
-    height: 14px;
+    height: 12px;
 }
 
 #gnb .aside .a-group .aside-01 li a::after{
