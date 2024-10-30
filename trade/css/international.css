@@ -68,9 +68,7 @@ body {
 
 
 /* Background start */
-#do0,
-#do1,
-#do9{
+#do21{
     text-transform: uppercase;
     animation: stroke 6s 1 alternate;
     /* fill: rgba(72, 500, 500, 1); */
