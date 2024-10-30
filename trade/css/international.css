@@ -70,8 +70,9 @@ body {
 /* Background start */
 #do21{
     text-transform: uppercase;
-    animation: stroke 6s 1 alternate;
+    animation: stroke 3s 1 alternate;
     /* fill: rgba(72, 500, 500, 1); */
+    stroke: rgba(255,255,255,0.8);
     /* 반복 ↓ */
     animation-iteration-count: infinite;
 }
@@ -87,6 +88,7 @@ body {
 /* Logo end */
 
 /*  */
+
 @keyframes stroke {
     0% {
         stroke-dashoffset: 25%;
@@ -102,5 +104,32 @@ body {
         stroke-width: 0;
     }
 }
+
+/* @keyframes stroke {
+    0% {
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        fill: rgba(255, 255, 255, 0.8);
+        stroke: rgba(255, 255, 255, 0.8);
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(150, 150, 150, 0.8);
+        stroke: rgba(255, 255, 255, 0.8);
+    }
+
+    80% {
+        stroke: rgba(255, 255, 255, 0.8);
+    }
+
+    100% {
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        fill: rgba(90, 90, 90, 0.8);
+        stroke: rgba(255, 255, 255, 0.8);
+        stroke-width: 0;
+    }
+} */
 
 
