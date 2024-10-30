@@ -18,7 +18,35 @@ body {
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+#wrap{
+    position: relative;
+    margin: 0 auto;
+}
 
+/* mainText */
+#mainText{
+    text-align: center;
+    margin: 0 auto;
+    padding: 120px 0 100px 0;
+}
+#mainText .mText {}
+#mainText .mText h2{}
+#mainText .mText p{
+    padding-top: 50px;
+}
+
+/* Tab */
+#myTab{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+#myTabContent{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.tab-content>.active{
+    text-align: center;
+}
 
 #section1{
     margin: 0 auto;
