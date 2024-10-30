@@ -90,15 +90,26 @@ body {
     0% {
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
-        stroke: rgba(255,255,255,1);
-        stroke-width: 1;
+        fill: rgba(255, 255, 255, 0.8);
+        stroke: rgba(255, 255, 255, 0.8);
+        stroke-width: 2;
     }
+
+    70% {
+        fill: rgba(150, 150, 150, 0.8);
+        stroke: rgba(255, 255, 255, 0.8);
+    }
+
+    80% {
+        /* fill: rgba(72, 138, 204, 0); */
+        stroke: rgba(255, 255, 255, 0.8);
+    }
+
     100% {
         stroke-dashoffset: -25%;
-        stroke-dasharray: 25% 0;
-        fill: rgba(255, 255, 255, 1);
-        stroke: rgba(255, 255, 255, 1);
+        stroke-dasharray: 50% 0;
+        fill: rgba(90, 90, 90, 0.8);
+        stroke: rgba(255, 255, 255, 0.8);
         stroke-width: 0;
     }
 }
-
