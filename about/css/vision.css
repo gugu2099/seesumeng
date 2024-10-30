@@ -58,16 +58,12 @@ body {
 
 /* section1 start */
 #section1{
-    /* position: relative; */
+    margin: 0 auto;
+    max-width: 1024px;
     height: 80vh;
 }
 
 /* section1 end */
-
-
-
-
-
 
 /* Background start */
 #do9{
