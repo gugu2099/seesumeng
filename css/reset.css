@@ -45,9 +45,11 @@ body {
 #myTab{
     max-width: 1280px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-tabs .nav-link{
-    width: 100%;
     border-radius: 0;
     background-color: #d1d1d1;
     color: #000;
@@ -55,27 +57,29 @@ body {
     line-height: 100%;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
-}
-.nav-tabs .nav-link.active{
-    background-color: #000;
-    color: #fff;
-}
-.nav-tabs{
-    display: flex;
-    justify-content: space-between;
+    border: var(--bs-nav-tabs-border-width) none transparent;
 }
 .nav-item{
     flex-grow: 1;
+    /* width: 100%; */
 }
 .nav-link{
     margin: 0 auto;
+    width: 100%;
+}
+.nav-tabs .nav-link.active{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
 }
 
 /* Bottom Tab */
 #myTabContent{
     max-width: 1280px;
+    height: 600px;
     margin: 0 auto;
 }
 .tab-content>.active{
     text-align: center;
+    height: 100%;
 }

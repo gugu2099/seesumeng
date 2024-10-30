@@ -16,8 +16,17 @@ svg {
     height: 100%;
 }
 
-
-#section1{}
+.bim0{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.bim1{
+    width: 50%;
+}
+.bim2{
+    width: 50%;
+}
 
 /* Background start */
 #do1{
@@ -43,26 +52,26 @@ svg {
     0% {
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
-        fill: rgba(255, 255, 255, 0.8);
-        stroke: rgba(255, 255, 255, 0.8);
+        fill: rgba(255, 255, 255, 0.5);
+        stroke: rgba(255, 255, 255, 0.5);
         stroke-width: 2;
     }
 
     70% {
-        fill: rgba(150, 150, 150, 0.8);
-        stroke: rgba(255, 255, 255, 0.8);
+        fill: rgba(150, 150, 150, 0.5);
+        stroke: rgba(255, 255, 255, 0.5);
     }
 
     80% {
         /* fill: rgba(72, 138, 204, 0); */
-        stroke: rgba(255, 255, 255, 0.8);
+        stroke: rgba(255, 255, 255, 0.5);
     }
 
     100% {
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
         fill: rgba(90, 90, 90, 0.8);
-        stroke: rgba(255, 255, 255, 0.8);
+        stroke: rgba(255, 255, 255, 0.5);
         stroke-width: 0;
     }
 }
