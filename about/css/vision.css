@@ -57,25 +57,24 @@ body {
 
 
 /* section1 start */
-#section1{
-
+section{
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
 }
-
 /* section1 end */
 
 /* Background start */
-#do21{
+/* #do21{
     text-transform: uppercase;
     animation: stroke 3s 1 alternate;
-    /* fill: rgba(72, 500, 500, 1); */
     stroke: rgba(255,255,255,0.8);
-    /* 반복 ↓ */
     animation-iteration-count: infinite;
-}
+} */
 /* Background end */
 
 /*  */
-@keyframes stroke {
+/* @keyframes stroke {
     0% {
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
@@ -90,7 +89,6 @@ body {
     }
 
     80% {
-        /* fill: rgba(72, 138, 204, 0); */
         stroke: rgba(255, 255, 255, 0.8);
     }
 
@@ -101,4 +99,4 @@ body {
         stroke: rgba(255, 255, 255, 0.8);
         stroke-width: 0;
     }
-}
+} */
