@@ -76,8 +76,13 @@ body {
     border: var(--bs-nav-tabs-border-width) none transparent;
 }
 .nav-item{
-    flex-grow: 1;
-    /* width: 100%; */
+    /* flex-grow: 1; */
+    width: 100%;
+}
+.navG{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .nav-link{
     margin: 0 auto;
