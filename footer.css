@@ -75,7 +75,7 @@ p, b, span, div, body {
     padding-right: 15px;
     line-height: 100%
 }
-#footer-group .box2 .box-text1 ul li:last-child::after{
+#footer-group .box2 .box-text1 ul li:last-child a::after{
     display: none;
 }
 
