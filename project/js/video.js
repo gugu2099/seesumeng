@@ -18,9 +18,3 @@ fetch('../footer.html')  // 상위 폴더로 이동하여 'footer.html' 파일 �
     })
     .catch(error => console.log('Error loading footer:', error));
 
-
-
-    
-
-
-
