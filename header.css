@@ -152,6 +152,9 @@ body {
     font-size: 16px;
     /* transform: translate(0, 50%); */
 }
+.red-col{
+    color: #a81113;
+}
 #gnb .aside .a-group .aside-02 > li > a:hover,
 #gnb .aside .a-group .aside-03 > li > a:hover {
     font-weight: 700;
