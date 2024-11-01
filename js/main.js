@@ -42,18 +42,14 @@ fetch('footer.html')
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        // 헤더 링크 클릭 이벤트 추가
-        const headerLinks = document.querySelectorAll(".aside-03 li a");
-        headerLinks.forEach(link => {
-            link.addEventListener("click", function(event) {
-                const tabName = link.getAttribute("data-tab");
-                if (tabName) {
-                    event.preventDefault();
-                    activateTab(tabName);
-                }
-            });
-        });
-        
+        // URL에서 tab 파라미터 읽기
+        const urlParams = new URLSearchParams(window.location.search);
+        const tabName = urlParams.get('tab');
+    
+        if (tabName) {
+            activateTab(tabName);
+        }
+    
         // 탭 활성화 함수
         function activateTab(tabName) {
             const tabContent = document.querySelectorAll(".tab-pane");
@@ -76,7 +72,6 @@ fetch('footer.html')
             });
         }
     });
-
 
 
 
