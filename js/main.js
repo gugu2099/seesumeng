@@ -39,6 +39,10 @@ fetch('footer.html')
     .catch(error => console.log('Error loading footer:', error));
 
 
+
+
+
+
     document.addEventListener("DOMContentLoaded", function() {
         // URL에서 tab 파라미터 읽기
         const urlParams = new URLSearchParams(window.location.search);
