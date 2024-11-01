@@ -58,7 +58,7 @@ fetch('footer.html')
             // 모든 탭 콘텐츠 숨기기
             tabContent.forEach(content => {
                 content.classList.remove("show", "active");
-                if (content.getAttribute("id").startsWith(tabName)) {
+                if (content.getAttribute("id") === `${tabName}-tab-pane`) {
                     content.classList.add("show", "active");
                 }
             });

@@ -19,6 +19,10 @@ fetch('../footer.html')  // 상위 폴더로 이동하여 'footer.html' 파일 �
     .catch(error => console.log('Error loading footer:', error));
 
 
+
+    
+
+
     document.addEventListener("DOMContentLoaded", function() {
         // URL에서 tab 파라미터 읽기
         const urlParams = new URLSearchParams(window.location.search);
@@ -36,7 +40,7 @@ fetch('../footer.html')  // 상위 폴더로 이동하여 'footer.html' 파일 �
             // 모든 탭 콘텐츠 숨기기
             tabContent.forEach(content => {
                 content.classList.remove("show", "active");
-                if (content.getAttribute("id").startsWith(tabName)) {
+                if (content.getAttribute("id") === `${tabName}-tab-pane`) {
                     content.classList.add("show", "active");
                 }
             });
