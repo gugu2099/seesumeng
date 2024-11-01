@@ -153,7 +153,7 @@ body {
     /* transform: translate(0, 50%); */
 }
 .red-col{
-    color: #a81113;
+    color: #a81113 !important;
 }
 #gnb .aside .a-group .aside-02 > li > a:hover,
 #gnb .aside .a-group .aside-03 > li > a:hover {
