@@ -22,36 +22,36 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// // Header 불러오기
-// fetch('header.html')
+// Header 불러오기
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+    })
+    .catch(error => console.log('Error loading header:', error));
+
+// Footer 불러오기
+fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.log('Error loading footer:', error));
+
+
+// fetch('https://gugu2099.github.io/seesumeng/header.html')
 //     .then(response => response.text())
 //     .then(data => {
 //         document.getElementById('header').innerHTML = data;
 //     })
 //     .catch(error => console.log('Error loading header:', error));
 
-// // Footer 불러오기
-// fetch('footer.html')
+// fetch('https://gugu2099.github.io/seesumeng/footer.html')
 //     .then(response => response.text())
 //     .then(data => {
-//         document.getElementById('footer').innerHTML = data;
+//         document.getElementById('header').innerHTML = data;
 //     })
-//     .catch(error => console.log('Error loading footer:', error));
-
-
-fetch('https://gugu2099.github.io/seesumeng/header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header').innerHTML = data;
-    })
-    .catch(error => console.log('Error loading header:', error));
-
-fetch('https://gugu2099.github.io/seesumeng/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header').innerHTML = data;
-    })
-    .catch(error => console.log('Error loading header:', error));
+//     .catch(error => console.log('Error loading header:', error));
 
 
 
