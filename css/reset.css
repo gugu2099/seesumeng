@@ -98,12 +98,12 @@ svg {
 /* Bottom Tab */
 #myTabContent{
     max-width: 1280px;
-    height: 600px;
+    /* height: 600px; */
     margin: 0 auto;
 }
 .tab-content>.active{
     text-align: center;
-    height: 100%;
+    /* height: 100%; */
 }
 
 
