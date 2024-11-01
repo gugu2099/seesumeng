@@ -47,16 +47,16 @@ fetch('footer.html')
         // URL에서 tab 파라미터 읽기
         const urlParams = new URLSearchParams(window.location.search);
         const tabName = urlParams.get('tab');
-    
+
         if (tabName) {
             activateTab(tabName);
         }
-    
+
         // 탭 활성화 함수
         function activateTab(tabName) {
             const tabContent = document.querySelectorAll(".tab-pane");
             const tabLinks = document.querySelectorAll("#myTab .nav-link");
-    
+
             // 모든 탭 콘텐츠 숨기기
             tabContent.forEach(content => {
                 content.classList.remove("show", "active");
@@ -64,7 +64,7 @@ fetch('footer.html')
                     content.classList.add("show", "active");
                 }
             });
-    
+
             // 모든 탭 링크 비활성화 후, 해당 탭 활성화
             tabLinks.forEach(link => {
                 link.classList.remove("active");
@@ -74,6 +74,7 @@ fetch('footer.html')
             });
         }
     });
+
 
 
 
