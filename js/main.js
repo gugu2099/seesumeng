@@ -100,20 +100,6 @@ fetch('footer.html')
 });
 
 
-    // document.addEventListener("DOMContentLoaded", () => {
-    //     const urlParams = new URLSearchParams(window.location.search);
-    //     const selectedTab = urlParams.get("tab");
-    //     if (selectedTab) {
-    //         const tabButton = document.querySelector(`#${selectedTab}-tab`);
-    //         if (tabButton) {
-    //             tabButton.click();
-    //         }
-    //     }
-    // });
-
-
-
-
 // 헤더푸터 가져오기
 // window.addEventListener('load', function() {
 //     var allElements = document.getElementsByTagName('*');
