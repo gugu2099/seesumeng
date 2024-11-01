@@ -1,3 +1,36 @@
-.c0P{
+.c0{
     text-align: left;
+    padding-left: 30px;
+}
+
+.tab-content>.active {
+    text-align: left !important;
+}
+.c1{
+    padding-top: 50px;
+}
+.c2{
+    padding: 30px 0;
+}
+.c2::before{
+    content: "";
+    display: block;
+    width: 50px;
+    border-top: 2px #C2C2C2 solid;
+}
+.c2 > h6{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    line-height: 160%;
+}
+.c2 > p{
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.map{}
+.map > iframe{
+    width: 100%;
+    height: 500px;
 }
