@@ -75,6 +75,17 @@ fetch('footer.html')
         }
     });
 
+    document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedTab = urlParams.get("tab");
+        if (selectedTab) {
+            const tabButton = document.querySelector(`#${selectedTab}-tab`);
+            if (tabButton) {
+                tabButton.click();
+            }
+        }
+    });
+
 
 
 
