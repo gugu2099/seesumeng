@@ -40,32 +40,44 @@ fetch('footer.html')
 
 
 
+
     document.addEventListener("DOMContentLoaded", function() {
-        // URL 파라미터로 탭 활성화
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has("tab")) {
-            const tabName = urlParams.get("tab");
-            activateTab(tabName);
-        }
-    
-        // 헤더의 모든 카테고리 링크에 이벤트 추가
-        const headerLinks = document.querySelectorAll(".header .project a"); // 헤더 링크 선택
+        // 헤더 링크 클릭 이벤트 추가
+        const headerLinks = document.querySelectorAll(".aside-03 li a");
         headerLinks.forEach(link => {
             link.addEventListener("click", function(event) {
-                event.preventDefault();
-                const tabName = link.getAttribute("data-tab"); // data-tab 속성에서 탭 이름 가져오기
-                window.location.href = `${window.location.pathname}?tab=${tabName}`;
+                const tabName = link.getAttribute("data-tab");
+                if (tabName) {
+                    event.preventDefault();
+                    activateTab(tabName);
+                }
             });
         });
-    });
+        
+        // 탭 활성화 함수
+        function activateTab(tabName) {
+            const tabContent = document.querySelectorAll(".tab-pane");
+            const tabLinks = document.querySelectorAll("#myTab .nav-link");
     
-    // 탭 활성화 함수
-    function activateTab(tabName) {
-        const allTabs = document.querySelectorAll(".tab"); // 모든 탭 요소 선택
-        allTabs.forEach(tab => {
-            tab.classList.toggle("active", tab.getAttribute("data-tab") === tabName); // 해당 탭 활성화
-        });
-    }
+            // 모든 탭 콘텐츠 숨기기
+            tabContent.forEach(content => {
+                content.classList.remove("show", "active");
+                if (content.getAttribute("id").startsWith(tabName)) {
+                    content.classList.add("show", "active");
+                }
+            });
+    
+            // 모든 탭 링크 비활성화 후, 해당 탭 활성화
+            tabLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("id") === `${tabName}-tab`) {
+                    link.classList.add("active");
+                }
+            });
+        }
+    });
+
+
 
 
 // 헤더푸터 가져오기
