@@ -86,21 +86,33 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// Header 불러오기
-fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header').innerHTML = data;
-    })
-    .catch(error => console.log('Error loading header:', error));
+// // Header 불러오기
+// fetch('header.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('header').innerHTML = data;
+//     })
+//     .catch(error => console.log('Error loading header:', error));
 
-// Footer 불러오기
-fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer').innerHTML = data;
-    })
-    .catch(error => console.log('Error loading footer:', error));
+// // Footer 불러오기
+// fetch('footer.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('footer').innerHTML = data;
+//     })
+//     .catch(error => console.log('Error loading footer:', error));
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("../header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("../footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+});
+
 
 
 // 헤더푸터 가져오기
