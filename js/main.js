@@ -104,7 +104,7 @@ fetch('footer.html')
 
 
 
-// 헤더푸터 가져오기
+// 과거 헤더푸터 가져오기
 // window.addEventListener('load', function() {
 //     var allElements = document.getElementsByTagName('*');
 //     Array.prototype.forEach.call(allElements, function(el) {
