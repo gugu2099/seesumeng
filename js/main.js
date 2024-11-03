@@ -86,40 +86,21 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// // Header 불러오기
-// fetch('header.html')
-//     .then(response => response.text())
-//     .then(data => {
-//         document.getElementById('header').innerHTML = data;
-//     })
-//     .catch(error => console.log('Error loading header:', error));
+// Header 불러오기
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+    })
+    .catch(error => console.log('Error loading header:', error));
 
-// // Footer 불러오기
-// fetch('footer.html')
-//     .then(response => response.text())
-//     .then(data => {
-//         document.getElementById('footer').innerHTML = data;
-//     })
-//     .catch(error => console.log('Error loading footer:', error));
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const loadHTML = (elementId, filePath) => {
-        fetch(filePath)
-            .then(response => {
-                if (!response.ok) throw new Error(`Could not load ${filePath}`);
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById(elementId).innerHTML = data;
-            })
-            .catch(error => console.error(error));
-    };
-
-    // 헤더와 푸터 로드
-    loadHTML("header", "../header.html");
-    loadHTML("footer", "../footer.html");
-});
+// Footer 불러오기
+fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.log('Error loading footer:', error));
 
 
 
