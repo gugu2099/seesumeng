@@ -22,25 +22,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-
-
-
-// fetch('https://gugu2099.github.io/seesumeng/header.html')
-//     .then(response => response.text())
-//     .then(data => {
-//         document.getElementById('header').innerHTML = data;
-//     })
-//     .catch(error => console.log('Error loading header:', error));
-
-// fetch('https://gugu2099.github.io/seesumeng/footer.html')
-//     .then(response => response.text())
-//     .then(data => {
-//         document.getElementById('header').innerHTML = data;
-//     })
-//     .catch(error => console.log('Error loading header:', error));
-
-
-
 // 헤더 카테고리 tab start
 document.addEventListener("DOMContentLoaded", function() {
     // URL에서 tab 파라미터 읽기
@@ -102,6 +83,24 @@ fetch('footer.html')
         document.getElementById('footer').innerHTML = data;
     })
     .catch(error => console.log('Error loading footer:', error));
+
+
+
+
+    // fetch('https://gugu2099.github.io/seesumeng/header.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('header').innerHTML = data;
+//     })
+//     .catch(error => console.log('Error loading header:', error));
+
+// fetch('https://gugu2099.github.io/seesumeng/footer.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('header').innerHTML = data;
+//     })
+//     .catch(error => console.log('Error loading header:', error));
+
 
 
 
