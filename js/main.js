@@ -104,13 +104,21 @@ var swiper = new Swiper(".mySwiper", {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("../header.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("header").innerHTML = data);
+    const loadHTML = (elementId, filePath) => {
+        fetch(filePath)
+            .then(response => {
+                if (!response.ok) throw new Error(`Could not load ${filePath}`);
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+            })
+            .catch(error => console.error(error));
+    };
 
-    fetch("../footer.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("footer").innerHTML = data);
+    // 헤더와 푸터 로드
+    loadHTML("header", "../header.html");
+    loadHTML("footer", "../footer.html");
 });
 
 
