@@ -22,51 +22,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// 헤더 카테고리 tab start
-// Function to activate tab based on URL parameters
-function activateTabFromUrl() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const tabName = urlParams.get('tab');
-
-    if (tabName) {
-        activateTab(tabName);
-    }
-}
-
-// Tab activation function
-function activateTab(tabName) {
-    const tabContent = document.querySelectorAll(".tab-pane");
-    const tabLinks = document.querySelectorAll("#myTab .nav-link");
-
-    // Hide all tab content
-    tabContent.forEach(content => {
-        content.classList.remove("show", "active");
-        if (content.getAttribute("id") === `${tabName}-tab-pane`) {
-            content.classList.add("show", "active");
-        }
-    });
-
-    // Deactivate all tab links and activate the selected one
-    tabLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("id") === `${tabName}-tab`) {
-            link.classList.add("active");
-        }
-    });
-}
-
-// Optional: handle tab button click to ensure URL parameter updates
-document.querySelectorAll('#myTab .nav-link').forEach(tab => {
-    tab.addEventListener('click', () => {
-        const tabName = tab.getAttribute('id').replace('-tab', '');
-        const newUrl = new URL(window.location);
-        newUrl.searchParams.set('tab', tabName);
-        window.history.pushState({}, '', newUrl);
-    });
-});
-// 헤더 카테고리 tab start
-
-
 // Header 불러오기
 fetch('header.html')
     .then(response => response.text())
@@ -82,6 +37,45 @@ fetch('footer.html')
         document.getElementById('footer').innerHTML = data;
     })
     .catch(error => console.log('Error loading footer:', error));
+
+
+
+
+// 헤더 카테고리 tab start
+document.addEventListener("DOMContentLoaded", function() {
+    // URL에서 tab 파라미터 읽기
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabName = urlParams.get('tab');
+
+    if (tabName) {
+        activateTab(tabName);
+    }
+
+    // 탭 활성화 함수
+    function activateTab(tabName) {
+        const tabContent = document.querySelectorAll(".tab-pane");
+        const tabLinks = document.querySelectorAll("#myTab .nav-link");
+
+        // 모든 탭 콘텐츠 숨기기
+        tabContent.forEach(content => {
+            content.classList.remove("show", "active");
+            if (content.getAttribute("id").startsWith(tabName)) {
+                content.classList.add("show", "active");
+            }
+        });
+
+        // 모든 탭 링크 비활성화 후, 해당 탭 활성화
+        tabLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("id") === `${tabName}-tab`) {
+                link.classList.add("active");
+            }
+        });
+    }
+});
+// 헤더 카테고리 tab start
+
+
 
 
 
