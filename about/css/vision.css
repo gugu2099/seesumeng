@@ -9,18 +9,19 @@
 
 section{
     line-height: 120%;
-    padding-top: 200px;
+    padding-top: 120px;
+    padding-bottom: 50px;
 }
 section .title > h3{
     padding: 150px 0 50px 0;
 }
 #section1 .title > h3{
-    padding: 0 0 50px 0;
+    /* padding: 0 0 50px 0; */
 }
 
 .article{
     background-color: #333;
-    height: 50vh;
+    height: 800px;
 }
 
 
