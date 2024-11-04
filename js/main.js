@@ -34,16 +34,14 @@ function activateTabFromURL() {
         // 모든 탭 콘텐츠 숨기기
         tabContent.forEach(content => {
             content.classList.remove("show", "active");
-            if (content.getAttribute("id") === `${tabName}-tab-pane`) {
-                content.classList.add("show", "active");
-            }
         });
 
-        // 모든 탭 링크 비활성화 후, 해당 탭 활성화
+        // 선택한 탭 활성화
         tabLinks.forEach(link => {
             link.classList.remove("active");
-            if (link.getAttribute("id") === `${tabName}-tab`) {
-                link.classList.add("active");
+            if (link.id === `${tabName}-tab`) {
+                link.classList.add("active"); // 선택한 탭 활성화
+                document.querySelector(link.dataset.bsTarget).classList.add("show", "active"); // 콘텐츠 보여주기
             }
         });
     }
