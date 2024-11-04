@@ -23,61 +23,30 @@ var swiper = new Swiper(".mySwiper", {
 
 
 // 헤더 카테고리 tab start
-// document.addEventListener("DOMContentLoaded", function () {
-//     const urlParams = new URLSearchParams(window.location.search);
-//     const tabName = urlParams.get("tab");
-
-//     if (tabName) {
-//         activateTab(tabName);
-//     }
-
-//     function activateTab(tabName) {
-//         const tabContent = document.querySelectorAll(".tab-pane");
-//         const tabLinks = document.querySelectorAll("#myTab .nav-link");
-
-//         // 모든 탭 콘텐츠 숨기기
-//         tabContent.forEach(content => {
-//             content.classList.remove("show", "active");
-//         });
-
-//         // 모든 탭 링크 비활성화
-//         tabLinks.forEach(link => {
-//             link.classList.remove("active");
-//         });
-
-//         // 선택된 탭 콘텐츠 및 링크 활성화
-//         const selectedTabContent = document.getElementById(`${tabName}-tab-pane`);
-//         const selectedTabLink = document.getElementById(`${tabName}-tab`);
-        
-//         if (selectedTabContent && selectedTabLink) {
-//             selectedTabContent.classList.add("show", "active");
-//             selectedTabLink.classList.add("active");
-//         } else {
-//             console.error(`Tab with id ${tabName} not found.`);
-//         }
-//     }
-// });
-
 document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
-    const tabName = urlParams.get('tab');
+    const tabName = urlParams.get('tab'); // URL에서 'tab' 파라미터 값을 가져옵니다.
 
     if (tabName) {
-        const targetTabLink = document.getElementById(`${tabName}-tab`);
-        const targetTabPane = document.getElementById(`${tabName}-tab-pane`);
+        const targetTabLink = document.getElementById(`${tabName}-tab`); // 해당 탭 버튼을 찾습니다.
+        const targetTabPane = document.getElementById(`${tabName}-tab-pane`); // 해당 탭 콘텐츠를 찾습니다.
         
-        // 해당 탭 링크와 콘텐츠가 있으면 활성화
+        // 해당 탭 링크와 콘텐츠가 존재하면 활성화
         if (targetTabLink && targetTabPane) {
+            // 모든 탭 링크 비활성화
             document.querySelectorAll("#myTab .nav-link").forEach(link => link.classList.remove("active"));
+            // 모든 탭 콘텐츠 숨기기
             document.querySelectorAll(".tab-pane").forEach(pane => pane.classList.remove("show", "active"));
             
+            // 해당 탭 버튼과 콘텐츠 활성화
             targetTabLink.classList.add("active");
             targetTabPane.classList.add("show", "active");
         } else {
-            console.error(`Tab ${tabName} elements not found.`);
+            console.error(`Tab ${tabName} elements not found.`); // 해당 탭이 없을 경우 에러 출력
         }
     }
 });
+
 // 헤더 카테고리 tab start
 
 
