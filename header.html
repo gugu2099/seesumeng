@@ -180,25 +180,35 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const urlParams = new URLSearchParams(window.location.search);
-        const tabName = urlParams.get('tab');
+document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabName = urlParams.get('tab');
 
-        if (tabName) {
-            const targetTabLink = document.getElementById(`${tabName}-tab`);
-            const targetTabPane = document.getElementById(`${tabName}-tab-pane`);
+    if (tabName) {
+        activateTab(tabName);
+    }
 
-            if (targetTabLink && targetTabPane) {
-                document.querySelectorAll("#myTab .nav-link").forEach(link => link.classList.remove("active"));
-                document.querySelectorAll(".tab-pane").forEach(pane => pane.classList.remove("show", "active"));
+    function activateTab(tabName) {
+        const tabContent = document.querySelectorAll(".tab-pane");
+        const tabLinks = document.querySelectorAll("#myTab .nav-link");
 
-                targetTabLink.classList.add("active");
-                targetTabPane.classList.add("show", "active");
-            } else {
-                console.error(`Tab ${tabName} elements not found.`);
+        // 모든 탭 콘텐츠 숨기기
+        tabContent.forEach(content => {
+            content.classList.remove("show", "active");
+            if (content.getAttribute("id") === `${tabName}-tab-pane`) {
+                content.classList.add("show", "active");
             }
-        }
-    });
+        });
+
+        // 모든 탭 링크 비활성화 후, 해당 탭 활성화
+        tabLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("id") === `${tabName}-tab`) {
+                link.classList.add("active");
+            }
+        });
+    }
+});
 </script>
 
 <!-- <script src="./js/main.js"></script> -->

@@ -22,6 +22,50 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+// Header 불러오기
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+        activateTabFromURL(); // 헤더가 불러와진 후 탭 활성화
+    })
+    .catch(error => console.log('Error loading header:', error));
+
+// 탭 활성화 함수
+function activateTabFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabName = urlParams.get('tab');
+
+    if (tabName) {
+        const tabContent = document.querySelectorAll(".tab-pane");
+        const tabLinks = document.querySelectorAll("#myTab .nav-link");
+
+        // 모든 탭 콘텐츠 숨기기
+        tabContent.forEach(content => {
+            content.classList.remove("show", "active");
+            if (content.getAttribute("id") === `${tabName}-tab-pane`) {
+                content.classList.add("show", "active");
+            }
+        });
+
+        // 모든 탭 링크 비활성화 후, 해당 탭 활성화
+        tabLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("id") === `${tabName}-tab`) {
+                link.classList.add("active");
+            }
+        });
+    }
+}
+
+// Footer 불러오기
+fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.log('Error loading footer:', error));
+
 // 헤더 카테고리 tab start
 // document.addEventListener("DOMContentLoaded", function() {
 //     const urlParams = new URLSearchParams(window.location.search);
@@ -49,21 +93,21 @@ var swiper = new Swiper(".mySwiper", {
 // 헤더 카테고리 tab start
 
 
-// Header 불러오기
-fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header').innerHTML = data;
-    })
-    .catch(error => console.log('Error loading header:', error));
+// // Header 불러오기
+// fetch('header.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('header').innerHTML = data;
+//     })
+//     .catch(error => console.log('Error loading header:', error));
 
-// Footer 불러오기
-fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer').innerHTML = data;
-    })
-    .catch(error => console.log('Error loading footer:', error));
+// // Footer 불러오기
+// fetch('footer.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('footer').innerHTML = data;
+//     })
+//     .catch(error => console.log('Error loading footer:', error));
 
 
 
