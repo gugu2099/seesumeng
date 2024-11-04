@@ -58,18 +58,23 @@ var swiper = new Swiper(".mySwiper", {
 //     }
 // });
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
-    const tabName = urlParams.get("tab");
+    const tabName = urlParams.get('tab');
 
     if (tabName) {
-        const tabButton = document.querySelector(`#${tabName}-tab`);
+        const targetTabLink = document.getElementById(`${tabName}-tab`);
+        const targetTabPane = document.getElementById(`${tabName}-tab-pane`);
         
-        // 탭 버튼이 존재하면 클릭 이벤트를 트리거하여 탭 활성화
-        if (tabButton) {
-            tabButton.click();
+        // 해당 탭 링크와 콘텐츠가 있으면 활성화
+        if (targetTabLink && targetTabPane) {
+            document.querySelectorAll("#myTab .nav-link").forEach(link => link.classList.remove("active"));
+            document.querySelectorAll(".tab-pane").forEach(pane => pane.classList.remove("show", "active"));
+            
+            targetTabLink.classList.add("active");
+            targetTabPane.classList.add("show", "active");
         } else {
-            console.error(`Tab button with id ${tabName}-tab not found.`);
+            console.error(`Tab ${tabName} elements not found.`);
         }
     }
 });
