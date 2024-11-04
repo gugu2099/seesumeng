@@ -24,7 +24,6 @@ var swiper = new Swiper(".mySwiper", {
 
 // 헤더 카테고리 tab start
 document.addEventListener("DOMContentLoaded", function () {
-    // URL에서 tab 파라미터 읽기
     const urlParams = new URLSearchParams(window.location.search);
     const tabName = urlParams.get("tab");
 
@@ -32,24 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
         activateTab(tabName);
     }
 
-    // 탭 버튼 클릭 시 URL 업데이트 함수
-    const tabLinks = document.querySelectorAll("#myTab .nav-link");
-    tabLinks.forEach(link => {
-        link.addEventListener("click", (event) => {
-            const selectedTab = event.currentTarget.getAttribute("id").replace("-tab", "");
-            updateURL(selectedTab);
-        });
-    });
-
-    // 탭 활성화 함수
     function activateTab(tabName) {
         const tabContent = document.querySelectorAll(".tab-pane");
         const tabLinks = document.querySelectorAll("#myTab .nav-link");
 
-        // 모든 탭 콘텐츠 및 링크 비활성화
+        // 모든 탭 콘텐츠 숨기기
         tabContent.forEach(content => {
             content.classList.remove("show", "active");
         });
+
+        // 모든 탭 링크 비활성화
         tabLinks.forEach(link => {
             link.classList.remove("active");
         });
@@ -57,16 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // 선택된 탭 콘텐츠 및 링크 활성화
         const selectedTabContent = document.getElementById(`${tabName}-tab-pane`);
         const selectedTabLink = document.getElementById(`${tabName}-tab`);
+        
         if (selectedTabContent && selectedTabLink) {
             selectedTabContent.classList.add("show", "active");
             selectedTabLink.classList.add("active");
+        } else {
+            console.error(`Tab with id ${tabName} not found.`);
         }
-    }
-
-    // URL 업데이트 함수
-    function updateURL(tabName) {
-        const newUrl = `${window.location.pathname}?tab=${tabName}`;
-        window.history.pushState({ path: newUrl }, '', newUrl);
     }
 });
 // 헤더 카테고리 tab start
