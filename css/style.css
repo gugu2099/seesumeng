@@ -184,12 +184,15 @@ video{
     width: 100%;
     position: relative;
 }
-#section2 .ta li:after{
+#section2 .ta li .ta-a{
+    width: 100%;
+}
+#section2 .ta li > a:after{
     content: "";
     display: block;
     padding-bottom: 100%;
+    height: 100%;
     background-color: #333;
-    /* cursor: pointer; */
 }
 
 /* tBox */
