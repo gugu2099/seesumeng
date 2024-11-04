@@ -23,37 +23,53 @@ var swiper = new Swiper(".mySwiper", {
 
 
 // 헤더 카테고리 tab start
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
+//     const urlParams = new URLSearchParams(window.location.search);
+//     const tabName = urlParams.get("tab");
+
+//     if (tabName) {
+//         activateTab(tabName);
+//     }
+
+//     function activateTab(tabName) {
+//         const tabContent = document.querySelectorAll(".tab-pane");
+//         const tabLinks = document.querySelectorAll("#myTab .nav-link");
+
+//         // 모든 탭 콘텐츠 숨기기
+//         tabContent.forEach(content => {
+//             content.classList.remove("show", "active");
+//         });
+
+//         // 모든 탭 링크 비활성화
+//         tabLinks.forEach(link => {
+//             link.classList.remove("active");
+//         });
+
+//         // 선택된 탭 콘텐츠 및 링크 활성화
+//         const selectedTabContent = document.getElementById(`${tabName}-tab-pane`);
+//         const selectedTabLink = document.getElementById(`${tabName}-tab`);
+        
+//         if (selectedTabContent && selectedTabLink) {
+//             selectedTabContent.classList.add("show", "active");
+//             selectedTabLink.classList.add("active");
+//         } else {
+//             console.error(`Tab with id ${tabName} not found.`);
+//         }
+//     }
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const tabName = urlParams.get("tab");
 
     if (tabName) {
-        activateTab(tabName);
-    }
-
-    function activateTab(tabName) {
-        const tabContent = document.querySelectorAll(".tab-pane");
-        const tabLinks = document.querySelectorAll("#myTab .nav-link");
-
-        // 모든 탭 콘텐츠 숨기기
-        tabContent.forEach(content => {
-            content.classList.remove("show", "active");
-        });
-
-        // 모든 탭 링크 비활성화
-        tabLinks.forEach(link => {
-            link.classList.remove("active");
-        });
-
-        // 선택된 탭 콘텐츠 및 링크 활성화
-        const selectedTabContent = document.getElementById(`${tabName}-tab-pane`);
-        const selectedTabLink = document.getElementById(`${tabName}-tab`);
+        const tabButton = document.querySelector(`#${tabName}-tab`);
         
-        if (selectedTabContent && selectedTabLink) {
-            selectedTabContent.classList.add("show", "active");
-            selectedTabLink.classList.add("active");
+        // 탭 버튼이 존재하면 클릭 이벤트를 트리거하여 탭 활성화
+        if (tabButton) {
+            tabButton.click();
         } else {
-            console.error(`Tab with id ${tabName} not found.`);
+            console.error(`Tab button with id ${tabName}-tab not found.`);
         }
     }
 });
