@@ -23,29 +23,47 @@ var swiper = new Swiper(".mySwiper", {
 
 
 // 헤더 카테고리 tab start
-function activateTabFromURL() {
+// Function to activate tab based on URL parameters
+function activateTabFromUrl() {
     const urlParams = new URLSearchParams(window.location.search);
     const tabName = urlParams.get('tab');
 
     if (tabName) {
-        const tabContent = document.querySelectorAll(".tab-pane");
-        const tabLinks = document.querySelectorAll("#myTab .nav-link");
-
-        // 모든 탭 콘텐츠 숨기기
-        tabContent.forEach(content => {
-            content.classList.remove("show", "active");
-        });
-
-        // 선택한 탭 활성화
-        tabLinks.forEach(link => {
-            link.classList.remove("active");
-            if (link.id === `${tabName}-tab`) {
-                link.classList.add("active"); // 선택한 탭 활성화
-                document.querySelector(link.dataset.bsTarget).classList.add("show", "active"); // 콘텐츠 보여주기
-            }
-        });
+        activateTab(tabName);
     }
 }
+
+// Tab activation function
+function activateTab(tabName) {
+    const tabContent = document.querySelectorAll(".tab-pane");
+    const tabLinks = document.querySelectorAll("#myTab .nav-link");
+
+    // Hide all tab content
+    tabContent.forEach(content => {
+        content.classList.remove("show", "active");
+        if (content.getAttribute("id") === `${tabName}-tab-pane`) {
+            content.classList.add("show", "active");
+        }
+    });
+
+    // Deactivate all tab links and activate the selected one
+    tabLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("id") === `${tabName}-tab`) {
+            link.classList.add("active");
+        }
+    });
+}
+
+// Optional: handle tab button click to ensure URL parameter updates
+document.querySelectorAll('#myTab .nav-link').forEach(tab => {
+    tab.addEventListener('click', () => {
+        const tabName = tab.getAttribute('id').replace('-tab', '');
+        const newUrl = new URL(window.location);
+        newUrl.searchParams.set('tab', tabName);
+        window.history.pushState({}, '', newUrl);
+    });
+});
 // 헤더 카테고리 tab start
 
 
