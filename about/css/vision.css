@@ -13,6 +13,10 @@ section{
     padding-bottom: 50px;
 }
 
+.title{
+    padding-bottom: 50px;
+}
+
 .article{
     background-color: #333;
     height: 800px;
