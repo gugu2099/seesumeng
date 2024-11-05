@@ -153,7 +153,6 @@ video{
 #section2 a {
     position: relative;
 }
-
 #section2 .ta li > a > p,
 #section2 .tw .tw1 > a > p,
 #section2 .tw .tw2 > a > p,
@@ -204,7 +203,6 @@ video{
     justify-content: space-between;
     gap: 20px;
 }
-
 #section2 .tw{
     display: flex;
     flex-direction: column;
@@ -224,7 +222,6 @@ video{
 #section2 .tw .tw2 > a{
     height: 100%;
 }
-
 #section2 .te{
     width: 100%;
     padding-top: 20px;
@@ -235,7 +232,6 @@ video{
 #section2 .te li{
     height: 100%;
 }
-
 #section2 .teG1{
     display: flex;
     flex-direction: column;

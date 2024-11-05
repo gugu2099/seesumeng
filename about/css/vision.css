@@ -18,13 +18,13 @@ section{
 .article{
     background-color: #333;
     height: 800px;
+    position: relative;
 }
 
 #section3 .article{
     background-color: #333;
     height: 200px;
     margin-bottom: 30px;
-    position: relative;
 }
 .article > p{
     position: absolute;
@@ -32,7 +32,7 @@ section{
     top: 20px;
     color: #fff;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Background start */
