@@ -212,8 +212,8 @@ svg {
     color: #fff;
 }
 
-.swiperS .swiper-button-next,
-.swiperS .swiper-button-prev {
+.slide .swiper-button-next,
+.slide .swiper-button-prev {
     color: #4e4e4e !important;
 }
 
