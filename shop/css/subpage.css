@@ -3,67 +3,26 @@
 #wrapper{
     max-width: 1280px;
     margin: 0 auto;
-    padding-top: 150px;
 }
-
-#contain{}
-
-.gg{
+.half{
     display: flex;
     justify-content: space-between;
-    padding-top: 100px;
-    padding-bottom: 20px;
 }
-.gg > p{
-    font-size: 16px;
-    font-weight: 600;
+.left-1{
+    width: 100%;
+    background-color: #aaa;
 }
-
-.gr{
-    display: grid;
-    grid-template:
-	1fr 1fr /
-	1fr 1fr 1fr 1fr;
-    gap: 20px;
+.imageBox{
+    height: 700px;
 }
-.gr .gr1{}
-.gr .gr1 .grB{
+.left-2{
     width: 100%;
 }
-.gr .gr1 .grB::after{
-    content: "";
-    color: #fff;
-    display: block;
-    padding-bottom: 100%;
-    background-color: #4e4e4e;
+.gb{
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
-
-.gr .gr1 .grG{
-    padding-left: 10px;
+.gb > li{
+    display: flex;
+    justify-content: space-between;
 }
-.gr .gr1 .grT{
-    padding-top: 20px;
-    font-size: 20px;
-    font-weight: 800;
-    color: #777;
-}
-.gr .gr1 .grT1{
-    padding-top: 14px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #000;
-    padding-bottom: 80px;
-}
-
-
-.pagination{
-    justify-content: center;
-    padding-top: 50px;
-}
-
-.page-link{
-    font-size: 18px;
-    color:#000;
-}
-
-.page-link > span{}
