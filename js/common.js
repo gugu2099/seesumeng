@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // slider
-var swiper = new Swiper('.second', {
+var swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     direction: getDirection(),
     navigation: {
