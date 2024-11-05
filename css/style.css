@@ -35,24 +35,24 @@ video{
 }
 
 /* slide text start */
-.slide{
+.mySwiper .slide{
     position: relative;
 }
 
-.slide1 > .slideText,
-.slide2 > .slideText,
-.slide3 > .slideText,
-.slide4 > .slideText{
+.mySwiper .slide1 > .slideText,
+.mySwiper .slide2 > .slideText,
+.mySwiper .slide3 > .slideText,
+.mySwiper .slide4 > .slideText{
     position: absolute;
     display: inline-block;
     bottom: 250px;
     left: 100px;
 }
 
-.slide1 > .slideText > h2,
-.slide2 > .slideText > h2,
-.slide3 > .slideText > h2,
-.slide4 > .slideText > h2{
+.mySwiper .slide1 > .slideText > h2,
+.mySwiper .slide2 > .slideText > h2,
+.mySwiper .slide3 > .slideText > h2,
+.mySwiper .slide4 > .slideText > h2{
     font-size: 30px;
     font-weight: 800;
     letter-spacing: 1px;
@@ -60,13 +60,13 @@ video{
     text-align: left;
 }
 
-.slide1 > .slideText > h2,
-.slide3 > .slideText > h2,
-.slide4 > .slideText > h2{
+.mySwiper .slide1 > .slideText > h2,
+.mySwiper .slide3 > .slideText > h2,
+.mySwiper .slide4 > .slideText > h2{
     color: #fff;
 }
 
-.slide2 > .slideText > h2{
+.mySwiper .slide2 > .slideText > h2{
     color: #3f3f3f;
 }
 /* slide text end */

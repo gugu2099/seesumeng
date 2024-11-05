@@ -187,12 +187,12 @@ svg {
     margin: 0 auto;
 }
 
-.swiper {
+.swiperS {
     max-width: 1000px;
     height: 235px;
 }
 
-.swiper-slide {
+.swiperS .swiper-slide {
     width: 100%;
     text-align: center;
     font-size: 18px;
@@ -203,7 +203,7 @@ svg {
     position: relative;
 }
 
-.swiper-slide > p{
+.swiperS .swiper-slide > p{
     position: absolute;
     width: 100%;
     left: 50%;
@@ -212,18 +212,18 @@ svg {
     color: #fff;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiperS .swiper-button-next,
+.swiperS .swiper-button-prev {
     color: #4e4e4e !important;
 }
 
 @media (max-width: 760px) {
-    .swiper-button-next {
+    .swiperS .swiper-button-next {
         right: 20px;
         transform: rotate(90deg);
     }
 
-    .swiper-button-prev {
+    .swiperS .swiper-button-prev {
         left: 20px;
         transform: rotate(90deg);
     }
