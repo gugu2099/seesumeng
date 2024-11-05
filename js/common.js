@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // slider
 var swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
+    slidesPerView: 4,
     direction: getDirection(),
     navigation: {
         nextEl: '.swiper-button-next',
