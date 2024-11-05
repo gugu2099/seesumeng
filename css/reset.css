@@ -202,14 +202,24 @@ svg {
     align-items: center;
     position: relative;
 }
-
-.swiperS .swiper-slide > p{
-    position: absolute;
+.swiperS .swiper-slide > a {
+    display: block;
     width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+}
+.swiperS .swiper-slide > a > p{
+    position: absolute;
+    left: 20px;
+    top: 20px;
     color: #fff;
+}
+.swiperS .swiper-slide > a > span{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+    text-align: left;
+    line-height: 160%;
 }
 
 .slide .swiper-button-next,
