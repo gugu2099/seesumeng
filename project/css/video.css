@@ -2,49 +2,71 @@
 
 
 
-
+/* VIDEO */
 #viG{
     padding-bottom: 50px;
     border-bottom: 1px #ccc solid;
 }
-#viG .viG1{}
-.video{
-    width: 100%;
+.viG1{
+    display: flex;
     padding-top: 50px;
 }
+.video{
+    width: 50%;
+}
+.viG1 .vText{
+    width: 50%;
+    position: relative;
+    background-color: #eee;
+}
+.viG1 .vText .vMi{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+}
+.viG1 .vText .vMi > h6{
+    font-size: 26px;
+    font-weight: 600;
+}
+.viG1 .vText .vMi > p{
+    padding-top: 80px;
+}
 
+/* PDF */
 .gr{
     display: grid;
     grid-template:
 	1fr 1fr /
-	1fr 1fr 1fr;
+	1fr 1fr 1fr 1fr;
     gap: 20px;
     padding-top: 50px;
 }
 .gr > .grA{}
-.gr .gr1{}
-.gr .gr1 .grB{
-    width: 100%;
+.gr .gr1{
     position: relative;
 }
-.gr .gr1 .grB::after{
+.gr .gr1 > img{
+    width: 100%;
+}
+.gr .gr1 .grB{
+    width: 100%;
+}
+/* .gr .gr1 .grB::after{
     content: "";
     color: #fff;
     display: block;
     padding-bottom: 100%;
     background-color: #4e4e4e;
-}
+} */
+/* background-image: url(../img/project3-1-1.png); */
+
 .gr .gr1 .grB > p{
     position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 30px;
+    bottom: 30px;
     color: #fff;
-    display: block;
     z-index: 9999;
-    font-size: 30px;
-}
-.gr .gr1 .grG{
-    padding-left: 10px;
+    font-size: 24px;
 }
