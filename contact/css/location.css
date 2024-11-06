@@ -42,7 +42,7 @@
 
 /* 폼 전체 스타일 */
 form {
-    max-width: 500px; /* 폼 최대 너비 */
+    max-width: 900px; /* 폼 최대 너비 */
     margin: 0 auto; /* 화면 가운데 정렬 */
     padding: 20px;
     /* border: 1px solid #ccc; */
@@ -50,7 +50,11 @@ form {
     /* background-color: #f9f9f9; */
     font-family: Arial, sans-serif;
 }
-
+.cBox{
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+}
 /* 입력 그룹 스타일 */
 form div {
     margin-bottom: 15px;
@@ -81,29 +85,31 @@ form textarea {
 /* 텍스트 영역 스타일 */
 form textarea {
     resize: vertical; /* 세로 크기만 조정 가능 */
-    min-height: 100px;
+    /* min-height: 100px; */
+    height: 400px;
 }
 
 /* 체크박스 스타일 */
 form input[type="checkbox"] {
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 /* 제출 버튼 스타일 */
 form button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #000;
     color: #fff;
     font-size: 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 form button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #a81113;
 }
 
 /* 반응형 스타일 */
