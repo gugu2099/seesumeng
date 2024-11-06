@@ -30,7 +30,7 @@ var swiper = new Swiper('.swiper', {
     spaceBetween : 20, // 슬라이드간 간격
     loop : true, // 무한 반복
     autoplay: { //자동슬라이드 (false-비활성화)
-        delay: 2800, // 시간 설정
+        delay: 2600, // 시간 설정
         disableOnInteraction: false, // false-스와이프 후 자동 재생
     },        
     direction: getDirection(),
