@@ -197,11 +197,17 @@ svg {
     width: 100%;
     text-align: center;
     font-size: 18px;
-    background: #4e4e4e;
+    /* background: #4e4e4e; */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+.swiperS .swiper-slide:nth-child(odd){
+    background-color: #4e4e4e;
+}
+.swiperS .swiper-slide:nth-child(even){
+    background-color: #222;
 }
 .swiperS .swiper-slide > a {
     display: block;
