@@ -113,7 +113,7 @@ form button[type="submit"]:hover {
 }
 
 /* 반응형 스타일 */
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     form {
         padding: 15px;
     }
