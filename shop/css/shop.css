@@ -28,16 +28,17 @@
     gap: 20px;
 }
 .gr .gr1{}
-.gr .gr1 .grB{
+.gr .gr1 .grB{}
+.gr .gr1 .grB > img{
     width: 100%;
 }
-.gr .gr1 .grB::after{
+/* .gr .gr1 .grB::after{
     content: "";
     color: #fff;
     display: block;
     padding-bottom: 100%;
     background-color: #4e4e4e;
-}
+} */
 
 .gr .gr1 .grG{
     padding-left: 10px;
