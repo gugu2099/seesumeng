@@ -36,8 +36,6 @@
 }
 
 
-
-
 /* form start */
 
 /* 폼 전체 스타일 */
@@ -87,6 +85,7 @@ form textarea {
     resize: vertical; /* 세로 크기만 조정 가능 */
     /* min-height: 100px; */
     height: 400px;
+    line-height: 160%;
 }
 
 /* 체크박스 스타일 */
@@ -124,4 +123,50 @@ form button[type="submit"]:hover {
     }
 }
 
+
+/* 텍스트 영역 기본 스타일 */
+textarea {
+    width: 300px;
+    height: 150px;
+    resize: none;
+    /* 사용자가 크기 조절하지 못하도록 고정 */
+    overflow-y: scroll;
+    /* 세로 스크롤바 항상 표시 */
+}
+
+/* 스크롤바 전체 영역 */
+textarea::-webkit-scrollbar {
+    width: 12px;
+    /* 스크롤바 너비 */
+}
+
+/* 스크롤바 트랙 */
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* 트랙 배경색 */
+    border-radius: 10px;
+}
+
+/* 스크롤바 핸들 */
+textarea::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* 핸들 색상 */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+    /* 핸들 주변 여백 */
+}
+
+/* 스크롤바 핸들 호버 시 색상 */
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* 호버 시 핸들 색상 */
+}
+
+/* Firefox 스크롤바 스타일 */
+textarea {
+    scrollbar-width: thin;
+    /* 스크롤바 너비 */
+    scrollbar-color: #888 #f1f1f1;
+    /* 핸들 색상 및 트랙 배경색 */
+}
 /* form end */
