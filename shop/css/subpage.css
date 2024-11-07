@@ -9,27 +9,16 @@
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    padding: 120px 0 50px 0;
+    padding: 120px 0 100px 0;
 }
 .left-1{
     width: 100%;
     background-color: #4e4e4e;
 }
-.imageBox{
-    height: 700px;
-    position: relative;
-}
-.imageBox > p{
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+.imageBox{}
+.imageBox > img{
     width: 100%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    text-align: center;
 }
-
 .left-2{
     width: 100%;
 }

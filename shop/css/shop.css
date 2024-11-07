@@ -31,6 +31,7 @@
 .gr .gr1 .grB{}
 .gr .gr1 .grB > img{
     width: 100%;
+    
 }
 /* .gr .gr1 .grB::after{
     content: "";
@@ -39,7 +40,6 @@
     padding-bottom: 100%;
     background-color: #4e4e4e;
 } */
-
 .gr .gr1 .grG{
     padding-left: 10px;
 }
