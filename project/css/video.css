@@ -46,6 +46,7 @@
 .gr > .grA{}
 .gr .gr1{
     position: relative;
+    overflow: hidden;
 }
 .gr .gr1 > img{
     width: 100%;
@@ -53,6 +54,7 @@
 .gr .gr1 > img:hover{
     filter: brightness(0.5);
     transition: 0.3s;
+    scale: 1.03;
 }
 .gr .gr1 .grB{
     width: 100%;
