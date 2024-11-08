@@ -17,7 +17,6 @@ section{
 
 .article{
     background-color: #333;
-    height: 800px;
     position: relative;
 }
 
@@ -33,6 +32,14 @@ section{
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+}
+#section1 > .article,
+#section2 > .article,
+#section3 > .article{
+    height: 800px;
+}
+#section4 .title .article > img{
+    width:  100%;
 }
 
 /* Background start */
