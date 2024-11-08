@@ -33,9 +33,8 @@ section{
     font-size: 20px;
     font-weight: 500;
 }
-#section1 > .article,
-#section2 > .article,
-#section3 > .article{
+#section1 .article,
+#section2 .article{
     height: 800px;
 }
 #section4 .title .article > img{
