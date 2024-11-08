@@ -50,6 +50,10 @@
 .gr .gr1 > img{
     width: 100%;
 }
+.gr .gr1 > img:hover{
+    filter: brightness(0.5);
+    transition: 0.3s;
+}
 .gr .gr1 .grB{
     width: 100%;
 }
