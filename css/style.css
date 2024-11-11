@@ -214,31 +214,31 @@ video{
     background-color: #333;
 }
 #section2 .ta .ta2{
-    background: url(/img/shop.jpg) no-repeat center center;
+    background: url(../img/shop.jpg) no-repeat center center;
 	background-size: cover;
 }
 #section2 .ta .ta3{
-    background: url(/img/trade.jpg) no-repeat center center;
+    background: url(../img/trade.jpg) no-repeat center center;
 	background-size: cover;
 }
 #section2 .tBox .tw1{
-    background: url(/img/light.png) no-repeat center center;
+    background: url(../img/light.png) no-repeat center center;
 	background-size: cover;
 }
 #section2 .tBox .tw2{
-    background: url(/img/im2.jpg) no-repeat center center;
+    background: url(../img/im2.jpg) no-repeat center center;
 	background-size: cover;
 }
 #section2 .te .te1{
-    background: url(/img/p1.jpg) no-repeat center center;
+    background: url(../img/p1.jpg) no-repeat center center;
 	background-size: cover;
 }
 #section2 .te .te2{
-    background: url(/img/m1.jpg) no-repeat center center;
+    background: url(../img/m1.jpg) no-repeat center center;
 	background-size: cover;
 }
 #section2 .te .te3{
-    background: url(/img/im1.jpg) no-repeat center center;
+    background: url(../img/im1.jpg) no-repeat center center;
 	background-size: cover;
 }
 #section2 .ta .ta1 > a > img{
