@@ -166,8 +166,8 @@ video{
 }
 #section2 .tw li > a,
 #section2 .te li > a{
-    background-color: #333;
-    display: block;
+    /* background-color: #333; */
+    /* display: block; */
     color: #fff;
 }
 
@@ -214,18 +214,12 @@ video{
 }
 #section2 .ta .ta1 > a:after,
 #section2 .ta .ta2 > a:after,
-#section2 .ta .ta3 > a:after{
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-    height: 100%;
-    /* 왼쪽 위에서 오른쪽 아래로 투명 -> 색상 */
-    background: linear-gradient(-45deg, rgba(255, 255, 255, 0) 10%, rgba(51, 51, 51, 0.9) 90%);
-}
-
-/* tBox */
+#section2 .ta .ta3 > a:after,
 #section2 .tBox .tw1 > a:after,
-#section2 .tBox .tw2 > a:after{
+#section2 .tBox .tw2 > a:after,
+#section2 .te .te1 > a:after,
+#section2 .te .te2 > a:after,
+#section2 .te .te3 > a:after{
     content: "";
     display: block;
     padding-bottom: 100%;
@@ -233,6 +227,7 @@ video{
     /* 왼쪽 위에서 오른쪽 아래로 투명 -> 색상 */
     background: linear-gradient(-45deg, rgba(255, 255, 255, 0) 10%, rgba(51, 51, 51, 0.9) 90%);
 }
+/* tBox */
 #section2 .tBox{
     display: flex;
     justify-content: space-between;
@@ -241,12 +236,24 @@ video{
 #section2 .tBox .tw li{
     overflow: hidden;
 }
-#section2 .tw .tBox .tw1{
+#section2 .tBox .tw1{
     background: url(/img/light.png) no-repeat center center;
 	background-size: cover;
 }
 #section2 .tBox .tw2{
-    background: url(/img/trade.jpg) no-repeat center center;
+    background: url(/img/im2.jpg) no-repeat center center;
+	background-size: cover;
+}
+#section2 .te .te1{
+    background: url(/img/p1.jpg) no-repeat center center;
+	background-size: cover;
+}
+#section2 .te .te2{
+    background: url(/img/m1.jpg) no-repeat center center;
+	background-size: cover;
+}
+#section2 .te .te3{
+    background: url(/img/im1.jpg) no-repeat center center;
 	background-size: cover;
 }
 #section2 .tw{
