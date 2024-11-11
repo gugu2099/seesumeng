@@ -188,13 +188,9 @@ video{
     background: url(/img/shop.jpg) no-repeat center center;
 	background-size: cover;
 }
-
 #section2 .ta .ta3{
     background: url(/img/trade.jpg) no-repeat center center;
 	background-size: cover;
-}
-#section2 .ta .ta3:hover:after{
-    transform: scale(1.1); /* 약간 확대 */
 }
 #section2 .ta li{
     width: 100%;
@@ -225,14 +221,33 @@ video{
     height: 100%;
     /* 왼쪽 위에서 오른쪽 아래로 투명 -> 색상 */
     background: linear-gradient(-45deg, rgba(255, 255, 255, 0) 10%, rgba(51, 51, 51, 0.9) 90%);
-    /* background-color: #333; */
 }
 
 /* tBox */
+#section2 .tBox .tw1 > a:after,
+#section2 .tBox .tw2 > a:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    height: 100%;
+    /* 왼쪽 위에서 오른쪽 아래로 투명 -> 색상 */
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0) 10%, rgba(51, 51, 51, 0.9) 90%);
+}
 #section2 .tBox{
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+#section2 .tBox .tw li{
+    overflow: hidden;
+}
+#section2 .tw .tBox .tw1{
+    background: url(/img/light.png) no-repeat center center;
+	background-size: cover;
+}
+#section2 .tBox .tw2{
+    background: url(/img/trade.jpg) no-repeat center center;
+	background-size: cover;
 }
 #section2 .tw{
     display: flex;
@@ -279,8 +294,6 @@ video{
 #section2 .teG2 li > a{
     height: 100%;
 }
+
+
 /* section2 end */
-
-
-
-/* keyframes */

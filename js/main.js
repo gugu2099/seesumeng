@@ -86,7 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // topBtn start
-
 // Top 버튼 요소 선택
 var topButton = document.getElementById("topBtn");
 
@@ -109,8 +108,23 @@ function scrollToTop() {
         behavior: "smooth" // 부드러운 스크롤 옵션
     });
 }
-
 // topBtn end
+
+
+
+// index mouseover scale
+const tradeItem = document.getElementById('tradeItem');
+const tradeLink = tradeItem.querySelector('a');
+
+// 자식 요소(a 태그)에서 hover 시 부모(li)의 배경을 변경
+tradeLink.addEventListener('mouseover', () => {
+    tradeItem.classList.add('hovered');
+});
+
+tradeLink.addEventListener('mouseout', () => {
+    tradeItem.classList.remove('hovered');
+});
+
 
 
 
