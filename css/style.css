@@ -159,11 +159,10 @@ video{
 #section2 .te .te2 > a > p,
 #section2 .te .te3 > a > p{
     position: absolute;
-    /* width: 100%; */
-    left: 30px;
-    top: 30px;
+    left: 20px;
+    top: 20px;
     color: #fff;
-    font-size: 22px;
+    font-size: 18px;
 }
 #section2 .tw li > a,
 #section2 .te li > a{
