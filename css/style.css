@@ -207,12 +207,14 @@ video{
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 36%;
+    width: 30%;
     transform: translate(-50%, -50%);
-    transition: 0.6s;
+    transition: 0.3s;
 }
-#section2 .ta .ta1:hover > img{
-    width: 40%;
+#section2 .ta .ta1 > a:hover > img,
+#section2 .ta .ta2 > a:hover > img,
+#section2 .ta .ta3 > a:hover > img{
+    width: 33%;
 }
 #section2 .ta .ta1 > a:after,
 #section2 .ta .ta2 > a:after,
