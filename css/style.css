@@ -152,6 +152,29 @@ video{
 #section2 a {
     position: relative;
 }
+
+#section2 .ta1,
+#section2 .ta2,
+#section2 .ta3,
+#section2 .tw1,
+#section2 .tw2,
+#section2 .twe1,
+#section2 .twe2,
+#section2 .twe3{
+    overflow: hidden;
+}
+
+/* #section2 .ta1 > a:hover,
+#section2 .ta2 > a:hover,
+#section2 .ta3 > a:hover,
+#section2 .tw1 > a:hover,
+#section2 .tw2 > a:hover,
+#section2 .twe1 > a:hover,
+#section2 .twe2 > a:hover,
+#section2 .twe3 > a:hover{
+    transform: scale(1.1);
+} */
+
 #section2 .ta li > a > p,
 #section2 .tw .tw1 > a > p,
 #section2 .tw .tw2 > a > p,
@@ -181,6 +204,12 @@ video{
     padding-top: 20px;
     overflow: hidden;
 }
+#section2 .ta li{
+    width: 100%;
+}   
+#section2 li > a{
+    display: block;
+}
 #section2 .ta .ta1{
     background-color: #333;
 }
@@ -192,12 +221,25 @@ video{
     background: url(/img/trade.jpg) no-repeat center center;
 	background-size: cover;
 }
-#section2 .ta li{
-    width: 100%;
-    position: relative;
-}   
-#section2 .ta li > a{
-    display: block;
+#section2 .tBox .tw1{
+    background: url(/img/light.png) no-repeat center center;
+	background-size: cover;
+}
+#section2 .tBox .tw2{
+    background: url(/img/im2.jpg) no-repeat center center;
+	background-size: cover;
+}
+#section2 .te .te1{
+    background: url(/img/p1.jpg) no-repeat center center;
+	background-size: cover;
+}
+#section2 .te .te2{
+    background: url(/img/m1.jpg) no-repeat center center;
+	background-size: cover;
+}
+#section2 .te .te3{
+    background: url(/img/im1.jpg) no-repeat center center;
+	background-size: cover;
 }
 #section2 .ta .ta1 > a > img{
     position: absolute;
@@ -232,29 +274,6 @@ video{
     display: flex;
     justify-content: space-between;
     gap: 20px;
-}
-#section2 .tBox .tw li{
-    overflow: hidden;
-}
-#section2 .tBox .tw1{
-    background: url(/img/light.png) no-repeat center center;
-	background-size: cover;
-}
-#section2 .tBox .tw2{
-    background: url(/img/im2.jpg) no-repeat center center;
-	background-size: cover;
-}
-#section2 .te .te1{
-    background: url(/img/p1.jpg) no-repeat center center;
-	background-size: cover;
-}
-#section2 .te .te2{
-    background: url(/img/m1.jpg) no-repeat center center;
-	background-size: cover;
-}
-#section2 .te .te3{
-    background: url(/img/im1.jpg) no-repeat center center;
-	background-size: cover;
 }
 #section2 .tw{
     display: flex;
