@@ -22,7 +22,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-
 // Header 불러오기
 fetch('header.html')
     .then(response => response.text())
@@ -38,7 +37,6 @@ fetch('footer.html')
         document.getElementById('footer').innerHTML = data;
     })
     .catch(error => console.log('Error loading footer:', error));
-
 
 
 // 헤더 카테고리 tab start

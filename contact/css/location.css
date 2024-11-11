@@ -39,12 +39,10 @@
 
 /* 폼 전체 스타일 */
 form {
-    max-width: 900px; /* 폼 최대 너비 */
-    margin: 0 auto; /* 화면 가운데 정렬 */
-    padding: 20px;
-    /* border: 1px solid #ccc; */
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 80px;
     border-radius: 8px;
-    /* background-color: #f9f9f9; */
     font-family: Arial, sans-serif;
 }
 .cBox{
@@ -52,7 +50,7 @@ form {
     justify-content: right;
     padding-top: 20px;
 }
-/* 입력 그룹 스타일 */
+
 form div {
     margin-bottom: 15px;
 }
@@ -81,8 +79,7 @@ form textarea {
 
 /* 텍스트 영역 스타일 */
 form textarea {
-    resize: vertical; /* 세로 크기만 조정 가능 */
-    /* min-height: 100px; */
+    resize: vertical;
     height: 400px;
     line-height: 160%;
 }
@@ -110,7 +107,7 @@ form button[type="submit"]:hover {
     background-color: #a81113;
 }
 
-/* 반응형 스타일 */
+/* form */
 @media screen and (max-width: 500px) {
     form {
         padding: 15px;
