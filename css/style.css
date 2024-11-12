@@ -135,14 +135,12 @@ video{
 }
 /* swiper end */
 
-
-/* section1 start */
+/* section0, section1 start */
 #section0, #section2{
     max-width: 1280px;
     margin: 0 auto;
 }
-/* section1 end */
-
+/* section0, section1 end */
 
 /* section2 start */
 #section2{
@@ -153,28 +151,12 @@ video{
     position: relative;
 }
 
-#section2 .ta1,
-#section2 .ta2,
-#section2 .ta3,
-#section2 .tw1,
-#section2 .tw2,
-#section2 .twe1,
-#section2 .twe2,
-#section2 .twe3{
+#section2 li{
     overflow: hidden;
 }
-
-
-/* #section2 .ta1 > a:hover,
-#section2 .ta2 > a:hover,
-#section2 .ta3 > a:hover,
-#section2 .tw1 > a:hover,
-#section2 .tw2 > a:hover,
-#section2 .twe1 > a:hover,
-#section2 .twe2 > a:hover,
-#section2 .twe3 > a:hover{
-    transform: scale(1.1);
-} */
+#section2 li > a{
+    display: block;
+}
 
 #section2 .ta .ta1 > a > p,
 #section2 .ta .ta2 > a > p,
@@ -190,12 +172,6 @@ video{
     color: #fff;
     font-size: 18px;
 }
-#section2 .tw li > a,
-#section2 .te li > a{
-    /* background-color: #333; */
-    /* display: block; */
-    color: #fff;
-}
 
 /* ta */
 #section2 .ta{
@@ -209,15 +185,23 @@ video{
 }
 #section2 .ta li{
     width: 100%;
-    position: relative;
-}   
-#section2 li > a{
-    display: block;
 }
 #section2 .ta .ta1{
     background-color: #333;
 }
 
+/* section2 image start */
+#section2 .ta .ta1 > a > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+#section2 .ta .ta1 > a:hover > img{
+    width: 33%;
+}
 #section2 .ta .ta2{
     background: url(../img/shop.jpg) no-repeat center center;
 	background-size: cover;
@@ -246,17 +230,8 @@ video{
     background: url(../img/im1.jpg) no-repeat center center;
 	background-size: cover;
 }
-#section2 .ta .ta1 > a > img{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 30%;
-    transform: translate(-50%, -50%);
-    transition: 0.3s;
-}
-#section2 .ta .ta1 > a:hover > img{
-    width: 33%;
-}
+/* section2 image start */
+
 #section2 .ta .ta1 > a:after,
 #section2 .ta .ta2 > a:after,
 #section2 .ta .ta3 > a:after,
@@ -269,27 +244,18 @@ video{
     display: block;
     padding-bottom: 100%;
     height: 100%;
-    /* 왼쪽 위에서 오른쪽 아래로 투명 -> 색상 */
-    /* background: linear-gradient(-45deg, rgba(255, 255, 255, 0) 10%, rgba(51, 51, 51, 0.9) 90%); */
     background: linear-gradient(360deg, rgba(255, 255, 255, 0) 60%, rgba(51, 51, 51, 0.9) 100%);
+    /* background: linear-gradient(-45deg, rgba(255, 255, 255, 0) 10%, rgba(51, 51, 51, 0.9) 90%); */
 }
 
-#section2 .ta .ta1 > a:after:hover,
-#section2 .ta .ta2 > a:after:hover,
-#section2 .ta .ta3 > a:after:hover,
-#section2 .tBox .tw1 > a:after:hover,
-#section2 .tBox .tw2 > a:after:hover,
-#section2 .te .te1 > a:after:hover,
-#section2 .te .te2 > a:after:hover,
-#section2 .te .te3 > a:after:hover{
-
-}
 /* tBox */
 #section2 .tBox{
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
+
+/* tw */
 #section2 .tw{
     display: flex;
     flex-direction: column;
@@ -304,11 +270,8 @@ video{
 #section2 .tw .tw1{
     height: 235px;
 }
-#section2 .tw .tw1 > a,
-#section2 .tw .tw2,
-#section2 .tw .tw2 > a{
-    height: 100%;
-}
+
+/* te */
 #section2 .te{
     width: 100%;
     padding-top: 20px;
@@ -326,15 +289,7 @@ video{
     gap: 20px;
     height: 100%;
 }
-#section2 .teG2{
-    width: 100%;
-}
-#section2 .teG1 li > a{
-    height: 100%;
-}
-#section2 .teG2 li > a{
-    height: 100%;
-}
+
 
 
 /* section2 end */
