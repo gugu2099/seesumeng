@@ -63,7 +63,7 @@ p, b, span, div, body {
 #footer-group .box2 .box-text1 ul {
     display: flex;
     justify-content: center;
-    padding: 4px 0;
+    padding: 10px 0;
 }
 #footer-group .box2 .box-text1 ul li {
     padding-right: 15px;
