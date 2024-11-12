@@ -51,6 +51,7 @@ svg {
     display: flex;
     justify-content: space-between;
     height: 100%;
+    padding-top: 50px;
 }
 .con1{
     width: 50%;
