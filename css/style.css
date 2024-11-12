@@ -164,6 +164,7 @@ video{
     overflow: hidden;
 }
 
+
 /* #section2 .ta1 > a:hover,
 #section2 .ta2 > a:hover,
 #section2 .ta3 > a:hover,
@@ -175,7 +176,9 @@ video{
     transform: scale(1.1);
 } */
 
-#section2 .ta li > a > p,
+#section2 .ta .ta1 > a > p,
+#section2 .ta .ta2 > a > p,
+#section2 .ta .ta3 > a > p,
 #section2 .tw .tw1 > a > p,
 #section2 .tw .tw2 > a > p,
 #section2 .te .te1 > a > p,
@@ -206,6 +209,7 @@ video{
 }
 #section2 .ta li{
     width: 100%;
+    position: relative;
 }   
 #section2 li > a{
     display: block;
@@ -213,6 +217,7 @@ video{
 #section2 .ta .ta1{
     background-color: #333;
 }
+
 #section2 .ta .ta2{
     background: url(../img/shop.jpg) no-repeat center center;
 	background-size: cover;
@@ -249,9 +254,7 @@ video{
     transform: translate(-50%, -50%);
     transition: 0.3s;
 }
-#section2 .ta .ta1 > a:hover > img,
-#section2 .ta .ta2 > a:hover > img,
-#section2 .ta .ta3 > a:hover > img{
+#section2 .ta .ta1 > a:hover > img{
     width: 33%;
 }
 #section2 .ta .ta1 > a:after,
@@ -268,7 +271,18 @@ video{
     height: 100%;
     /* 왼쪽 위에서 오른쪽 아래로 투명 -> 색상 */
     /* background: linear-gradient(-45deg, rgba(255, 255, 255, 0) 10%, rgba(51, 51, 51, 0.9) 90%); */
-    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 60%, rgba(51, 51, 51, 0.9) 100%)
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 60%, rgba(51, 51, 51, 0.9) 100%);
+}
+
+#section2 .ta .ta1 > a:after:hover,
+#section2 .ta .ta2 > a:after:hover,
+#section2 .ta .ta3 > a:after:hover,
+#section2 .tBox .tw1 > a:after:hover,
+#section2 .tBox .tw2 > a:after:hover,
+#section2 .te .te1 > a:after:hover,
+#section2 .te .te2 > a:after:hover,
+#section2 .te .te3 > a:after:hover{
+
 }
 /* tBox */
 #section2 .tBox{
