@@ -85,6 +85,32 @@ document.addEventListener("DOMContentLoaded", () => {
 // 헤더 카테고리 tab start
 
 
+// topBtn start
+// Top 버튼 요소 선택
+var topButton = document.getElementById("topBtn");
+
+// 스크롤 이벤트 감지
+window.onscroll = function() { scrollFunction(); };
+
+function scrollFunction() {
+    // 스크롤이 100px 이상 내려갔을 때 버튼 표시
+    if (window.scrollY > 100) {
+        topButton.style.display = "block";
+    } else {
+        topButton.style.display = "none";
+    }
+}
+
+// 부드러운 스크롤 함수
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // 부드러운 스크롤 옵션
+    });
+}
+// topBtn end
+
+
 
 // index mouseover scale
 const tradeItem = document.getElementById('tradeItem');
@@ -101,7 +127,10 @@ tradeLink.addEventListener('mouseout', () => {
 
 
 
-// fetch('https://gugu2099.github.io/seesumeng/header.html')
+
+
+
+    // fetch('https://gugu2099.github.io/seesumeng/header.html')
 //     .then(response => response.text())
 //     .then(data => {
 //         document.getElementById('header').innerHTML = data;
@@ -114,6 +143,8 @@ tradeLink.addEventListener('mouseout', () => {
 //         document.getElementById('header').innerHTML = data;
 //     })
 //     .catch(error => console.log('Error loading header:', error));
+
+
 
 
 // 과거 헤더푸터 가져오기
