@@ -254,6 +254,7 @@ video{
     justify-content: space-between;
     gap: 20px;
 }
+
 /* tw */
 #section2 .tw{
     display: flex;
@@ -269,6 +270,7 @@ video{
 #section2 .tw .tw1{
     height: 235px;
 }
+
 /* te */
 #section2 .te{
     width: 100%;
