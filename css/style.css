@@ -257,7 +257,7 @@ video{
 #section2 .te .te1 > a:hover:after,
 #section2 .te .te2 > a:hover:after,
 #section2 .te .te3 > a:hover:after{
-    height: 50%;
+    height: 100%;
 }
 
 /* tBox */
