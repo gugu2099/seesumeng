@@ -244,9 +244,20 @@ video{
     content: "";
     display: block;
     padding-bottom: 100%;
-    height: 100%;
-    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 60%, rgba(51, 51, 51, 0.9) 100%);
-    /* background: linear-gradient(-45deg, rgba(255, 255, 255, 0) 10%, rgba(51, 51, 51, 0.9) 90%); */
+    height: 0;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 70%, rgba(51, 51, 51, 0.9) 100%);
+    transition: height 0.3s ease;
+}
+
+#section2 .ta .ta1 > a:hover:after,
+#section2 .ta .ta2 > a:hover:after,
+#section2 .ta .ta3 > a:hover:after,
+#section2 .tBox .tw1 > a:hover:after,
+#section2 .tBox .tw2 > a:hover:after,
+#section2 .te .te1 > a:hover:after,
+#section2 .te .te2 > a:hover:after,
+#section2 .te .te3 > a:hover:after{
+    height: 50%;
 }
 
 /* tBox */
